@@ -11,7 +11,7 @@ const card = () => {
           return (
             <div
               key={user.id}
-              className="container w-[90%] gap-[30px] h-[520px] relative shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[6px]"
+              className="container w-[90%] gap-[30px] h-[520px] relative shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[6px] lg:w-[95%]"
             >
               <img
                 src={user.profile_img}
