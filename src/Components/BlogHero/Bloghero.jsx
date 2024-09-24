@@ -59,13 +59,11 @@ const Bloghero = () => {
           ></path>
         </svg>
         <div className="z-10 w-1/2 absolute flex flex-col items-center">
-          <p className=" text-sm font-medium text-slate-300 flex items-center justify-center">
+          <p className=" text-sm font-medium text-black flex items-center justify-center">
             Our Blogs
           </p>
-          <h1 className=" text-3xl text-slate-300 mt-1">
-            Resources and insights
-          </h1>
-          <h6 className=" text-xl text-slate-500 mt-1">
+          <h1 className=" text-3xl text-black mt-1">Resources and insights</h1>
+          <h6 className=" text-xl text-black mt-1">
             The latest industry news, interviews, technologies, and resources.
           </h6>
           <div>
@@ -76,7 +74,7 @@ const Bloghero = () => {
               placeholder="Seach..."
               className=" mt-12 p-1 outline-none border border-black bg-transparent "
             />
-            <button className="border border-slate-400 p-1 mx-2 text-slate-200">
+            <button className="border border-black p-1 mx-2 text-slate-200">
               Search
             </button>
           </div>
