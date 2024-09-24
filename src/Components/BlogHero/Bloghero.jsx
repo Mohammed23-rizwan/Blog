@@ -1,10 +1,11 @@
 import "./Bloghero.css";
 import Card from "../card/card";
+import { IoSearch } from "react-icons/io5";
 
 const Bloghero = () => {
   return (
     <>
-      <div className=" w-full min-h-96 relative flex justify-center items-center">
+      <div className=" w-full min-h-[250px] relative flex justify-center items-center md:h-[350px]">
         <svg
           className=" absolute top-0 left-0"
           id="wave"
@@ -58,25 +59,28 @@ const Bloghero = () => {
             d="M0,147L48,187.8C96,229,192,310,288,294C384,278,480,163,576,114.3C672,65,768,82,864,89.8C960,98,1056,98,1152,122.5C1248,147,1344,196,1440,212.3C1536,229,1632,212,1728,204.2C1824,196,1920,196,2016,228.7C2112,261,2208,327,2304,310.3C2400,294,2496,196,2592,196C2688,196,2784,294,2880,351.2C2976,408,3072,425,3168,400.2C3264,376,3360,310,3456,269.5C3552,229,3648,212,3744,228.7C3840,245,3936,294,4032,294C4128,294,4224,245,4320,204.2C4416,163,4512,131,4608,138.8C4704,147,4800,196,4896,187.8C4992,180,5088,114,5184,106.2C5280,98,5376,147,5472,155.2C5568,163,5664,131,5760,147C5856,163,5952,229,6048,285.8C6144,343,6240,392,6336,367.5C6432,343,6528,245,6624,204.2C6720,163,6816,180,6864,187.8L6912,196L6912,490L6864,490C6816,490,6720,490,6624,490C6528,490,6432,490,6336,490C6240,490,6144,490,6048,490C5952,490,5856,490,5760,490C5664,490,5568,490,5472,490C5376,490,5280,490,5184,490C5088,490,4992,490,4896,490C4800,490,4704,490,4608,490C4512,490,4416,490,4320,490C4224,490,4128,490,4032,490C3936,490,3840,490,3744,490C3648,490,3552,490,3456,490C3360,490,3264,490,3168,490C3072,490,2976,490,2880,490C2784,490,2688,490,2592,490C2496,490,2400,490,2304,490C2208,490,2112,490,2016,490C1920,490,1824,490,1728,490C1632,490,1536,490,1440,490C1344,490,1248,490,1152,490C1056,490,960,490,864,490C768,490,672,490,576,490C480,490,384,490,288,490C192,490,96,490,48,490L0,490Z"
           ></path>
         </svg>
-        <div className="z-10 w-1/2 absolute flex flex-col items-center">
-          <p className=" text-sm font-medium text-black flex items-center justify-center">
+        <div className="absolute z-10 flex flex-col justify-center items-center mt-4">
+          <p className=" text-sm font-medium text-black flex items-center justify-center border border-[#a2998d93] px-3 py-2 rounded-md">
             Our Blogs
           </p>
-          <h1 className=" text-3xl text-black mt-1">Resources and insights</h1>
-          <h6 className=" text-xl text-black mt-1">
+          <h1 className=" text-lg text-black mt-1 md:text-2xl">
+            Resources and insights
+          </h1>
+          <h6 className=" text-base text-black mt-1 text-center md:text-lg">
             The latest industry news, interviews, technologies, and resources.
           </h6>
-          <div>
+          <div
+            className=" mt-6 p-2 outline-none bg-transparent flex
+          items-center w-1/2 h-[38px] border-[1px] border-[#FA9B21] rounded-[10px] "
+          >
+            <IoSearch className="text-xl h-full cursor-pointer" />
             <input
               type="search"
               name=""
               id=""
               placeholder="Seach..."
-              className=" mt-12 p-1 outline-none border border-black bg-transparent "
+              className="bg-transparent px-2 w-full h-full outline-none text-lg"
             />
-            <button className="border border-black p-1 mx-2 text-slate-200">
-              Search
-            </button>
           </div>
         </div>
       </div>
