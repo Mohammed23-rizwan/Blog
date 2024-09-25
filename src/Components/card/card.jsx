@@ -1,13 +1,19 @@
 // import img1 from "../../assets/pexels-jplenio-1423600.jpg";
+import { useEffect, useState } from "react";
 import { Users } from "../../user";
 import { FiArrowUpRight } from "react-icons/fi";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
-const card = () => {
+const Card = () => {
+  const [page, setPage] = useState(9);
+
+  const loading = Users.slice(0, page);
+  const finalVariable = Users.length;
+  useEffect(() => {}, [page]);
   return (
     <>
       <div className="w-full grid grid-cols-1 place-items-center gap-[25px] md:grid-cols-2 lg:grid-cols-3">
-        {Users.map((user) => {
+        {loading.map((user) => {
           return (
             <div
               key={user.id}
@@ -42,16 +48,23 @@ const card = () => {
         })}
       </div>
       <div className="m-10 flex justify-center">
-        <button
-          type="button"
-          className="flex justify-center items-center gap-[10px] border  px-10 py-[10px] outline-none bg-transparent"
-        >
-          <MdOutlineKeyboardDoubleArrowDown />
-          Load More
-        </button>
+        {finalVariable == page ? (
+          <h6 className="text-lg">Ended</h6>
+        ) : (
+          <button
+            type="button"
+            className="flex justify-center items-center gap-[10px] border  px-10 py-[10px] outline-none bg-transparent"
+            onClick={() => {
+              setPage(page + 6);
+            }}
+          >
+            <MdOutlineKeyboardDoubleArrowDown />
+            Load More
+          </button>
+        )}
       </div>
     </>
   );
 };
 
-export default card;
+export default Card;
