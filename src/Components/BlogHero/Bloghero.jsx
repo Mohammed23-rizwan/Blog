@@ -1,8 +1,11 @@
 import "./Bloghero.css";
 import Card from "../card/card";
 import { IoSearch } from "react-icons/io5";
+import { useState } from "react";
 
 const Bloghero = () => {
+  const [data, setdata] = useState(0);
+
   return (
     <>
       <div className=" w-full min-h-[250px] relative flex justify-center items-center md:h-[350px]">
@@ -80,11 +83,14 @@ const Bloghero = () => {
               id=""
               placeholder="Seach..."
               className="bg-transparent px-2 w-full h-full outline-none text-lg"
+              onChange={(e) => {
+                setdata(e.target.value);
+              }}
             />
           </div>
         </div>
       </div>
-      <Card />
+      <Card data={data} />
     </>
   );
 };
