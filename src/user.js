@@ -179,4 +179,40 @@ export const Users = [
       "https://img.freepik.com/premium-photo/3d-style-avatar-profile-picture-featuring-male-character-generative-ai_739548-13628.jpg",
     desc: "Introduction to Wireframing and its Principles. Learn from the best in the industry.",
   },
+  {
+    id: 16,
+    profile_img:
+      "https://blogs.opentext.com/wp-content/uploads/2024/06/opentext-image-blog-DX-contact-center-image4-1200x675-1-1024x576.png",
+    work: "Customer Service",
+    title: "Podcast: Creating a better CX Community",
+    name: "Orlando Diggs",
+    date: "20 Jan 2022",
+    profile:
+      "https://img.freepik.com/premium-photo/criminologist-digital-avatar-generative-ai_934475-9136.jpg",
+    desc: "Starting a community doesn’t need to be complicated, but how do you get started?",
+  },
+  {
+    id: 17,
+    profile_img:
+      "https://blueskygraphics.co.uk/wp-content/uploads/2021/08/The-Best-Computer-Build-For-A-Graphic-Designer-2022.jpg",
+    work: "Design",
+    title: "UX review presentations",
+    name: "Olivia Rhye",
+    date: "12 Jan 2022",
+    profile:
+      "https://img.freepik.com/premium-photo/3d-illustration-cartoon-character-avatar-profile_1183071-176.jpg",
+    desc: "How do you create compelling presentations that wow your colleagues and impress your managers?",
+  },
+  {
+    id: 18,
+    profile_img:
+      "https://www.mooc.org/hs-fs/hubfs/learn-programming-career-jpg.jpeg?width=500&name=learn-programming-career-jpg.jpeg",
+    work: "Product",
+    title: "Migrating to Linear 101",
+    name: "Phoenix Baker",
+    date: "13 Jan 2022",
+    profile:
+      "https://static.vecteezy.com/system/resources/previews/026/976/736/non_2x/3d-icon-avatar-woman-illustration-of-smiling-happy-girl-cartoon-close-up-portrait-people-of-standing-teenager-on-isolated-on-transparent-background-generative-ai-png.png",
+    desc: "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
+  },
 ];
