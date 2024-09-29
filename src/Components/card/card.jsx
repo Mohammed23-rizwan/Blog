@@ -11,6 +11,7 @@ const Card = ({ data }) => {
   const loading = Users.slice(0, page);
   const finalVariable = Users.length;
 
+  console.log(finalVariable);
   const search = (Users) => {
     return Users.filter((page1) => page1.name.toLowerCase().includes(data));
   };
@@ -92,7 +93,7 @@ const Card = ({ data }) => {
             })}
       </div>
       <div className="m-10 flex justify-center">
-        {finalVariable == page ? (
+        {finalVariable === page ? (
           <h6 className="text-lg">Ended</h6>
         ) : (
           <button
